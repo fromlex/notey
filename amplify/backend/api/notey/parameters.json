@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "notey",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authnotey9a4a4e27",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
